@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     font-family: 'Jost', sans-serif;
     /* background-image: linear-gradient(to right top, #0f2027, #12252c, #152931, #192e37, #1c333c, #1e3741, #213c46, #23404b, #254551, #274957, #2a4e5e, #2c5364); */
+    background-image: linear-gradient(to right top, #734b6d, #684168, #5c3863, #4f2f5e, #42275a);
     background-color: #EEEEEE;
 }
 
