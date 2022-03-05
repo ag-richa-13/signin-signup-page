@@ -2,6 +2,8 @@ const mysql = require('mysql');
 const path = require('path');
 const alert = require('alert');
 
+const sourceFolder = path.join(__dirname, '../../public')
+
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
@@ -10,11 +12,11 @@ const pool = mysql.createPool({
 });
 
 module.exports.view = function(req, res, next) {
-    res.sendFile(path.join(__dirname, '../../public/index.html'));
+    res.sendFile(sourceFolder + '/index.html');
 }
 
 module.exports.form = function(req, res, next) {
-    res.sendFile(path.join(__dirname, '../../public/register.html'));
+    res.sendFile(sourceFolder + '/register.html');
 
 }
 

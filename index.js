@@ -11,7 +11,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, 'public')));
+const sourceFolder = path.join(__dirname, 'public');
+
+app.use(express.static(sourceFolder));
 
 app.use(session({
     secret: 'UB&iY^B^',
