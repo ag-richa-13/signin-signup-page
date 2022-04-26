@@ -48,7 +48,7 @@ module.exports.create = function(req, res, next) {
 }
 
 module.exports.loginform = function(req, res, next) {
-    res.sendFile(path.join(__dirname, '../../public/login.html'));
+    res.sendFile(sourceFolder + '/login.html');
 }
 
 module.exports.login = function(req, res) {
@@ -71,5 +71,5 @@ module.exports.login = function(req, res) {
 
 module.exports.homepage = function(req, res) {
 
-    res.sendFile(path.join(__dirname, '../../public/home.html'));
+    res.sendFile(sourceFolder + '/home.html');
 }
